@@ -49,6 +49,10 @@ article {
   justify-content: space-between;
 }
 
+header article {
+  flex-wrap: wrap;
+}
+
 nav ul {
   gap: 30px;
 }
@@ -60,12 +64,12 @@ article {
   margin-bottom: 130px;
 }
 
-.left,
-.right {
+article .left,
+article .right {
   flex: 1 1 45%;
 }
 
-.left {
+article .left {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -77,12 +81,12 @@ article {
   font-weight: 900;
 }
 
-.left .content {
+article .left .content {
   font-size: 18px;
   color: #E5E7EB;
 }
 
-.left button {
+article .left button {
   color: #F9FAF8;
   background-color: #3882F6;
   align-self: flex-start;
@@ -126,11 +130,11 @@ article .right {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .fig {
   width: 200px;
-
 }
 
 .fig img {
@@ -170,4 +174,56 @@ article .right {
   text-align: right;
   font-size: 20px;
   font-weight: bold;
+  margin-top: 30px;
+}
+
+/* call-action */
+.call-action {
+  display: flex;
+  justify-content: center;
+}
+
+.call-action .container {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 30px 70px;
+  margin: 100px auto;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+
+.call-action .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-action button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 8px 30px;
+  font-size: 20px;
+  border: 1px #F9FAF8 solid;
+  border-radius: 5px;
+}
+
+/* footer */
+footer {
+  background-color: #1F2937;
+  color: #E5E7EB;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 18px;
 }
