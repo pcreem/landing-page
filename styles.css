@@ -1,0 +1,106 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #E5E7EB;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937;
+}
+
+header nav,
+article {
+  width: 75%;
+}
+
+header nav {
+  margin: 30px 0 100px;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+}
+
+/* Navigation Styles */
+nav,
+nav ul,
+article {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  gap: 30px;
+}
+
+/* Article Styles */
+article {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 130px;
+}
+
+.left,
+.right {
+  flex: 1 1 45%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.left .title {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.left .content {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+.left button {
+  color: #F9FAF8;
+  background-color: #3882F6;
+  align-self: flex-start;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Right Section Styles */
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808080a3;
+}
+
+.right figcaption {
+  color: #E5E7EB;
+}
